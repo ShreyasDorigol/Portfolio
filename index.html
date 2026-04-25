@@ -1,97 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyas Dorigol | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<h1>Shreyas Dorigol</h1>
-<h3>Engineering Student</h3>
+<!-- Navbar -->
+<header class="navbar">
+    <h2 class="logo">MyPortfolio</h2>
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Projects">Projects</a>
+        <a href="assets/Shreyas-resume.pdf" target="_blank">Resume</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+    <button id="darkModeToggle">🌙</button>
+</header>
 
-<h2>About Me</h2>
-<p>
-I am an engineering student with an interest in full-stack development.
-And I enjoy learning new technologies and building simple projects.
-</p>
+<!--Section -->
+<section id="Home" class="home">
+    <img src="images/profile.png" alt="Profile" class="profile-img" >
+    <h1 >Shreyas Dorigol</h1>
+    <h4>Engineering Student</h4>
+    <p >Aspiring Full Stack Java Developer</p>
+</section>
 
-<h2>Skills</h2>
-<ul>
-    <li>C Programming</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>Java</li>
-</ul>
+<!-- About -->
+<section id="About">
+    <h2>About Me</h2>
+    <p>
+        As an engineering student, I am passionate about full-stack development, 
+        eager to learn new technologies, and enjoy building practical projects.
+    </p>
+</section>
 
-<!-- Projects Section -->
-<section>
+<!-- Skills -->
+<section id="Skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Java</li>
+        <li>MySQL</li>
+    </ul>
+</section>
+
+<!-- Projects -->
+<section id="Projects">
     <h2>Projects</h2>
 
-    <!-- Project 1 -->
-    <div>
-        <h3>Digital Interface for departmental operations and Student resources</h3>
-        <p>
-           This project focuses on developing a web application that efficiently manages student, faculty, and administrative workflows.
-           It features a real-time digital attendance system for accurate tracking and reporting, 
-           and an automated timetable generation module that reduces manual scheduling and saves time.
-        </p>
-        <p><strong>Tools Used:</strong> HTML, CSS, JavaScript, MySQL</p>
-        <img src="images/projects/projects2.jpeg" alt="Digital Interface for departmental operations Output" width="400">
-        <img src="images/projects/projects3.jpeg" alt="Digital Interface for departmental operations Output" width="400">
-    </div>
+    <div class="project-container">
 
-    <hr>
+        <div class="project-card">
+            <h3>
+                <a href="project1.html" target="_blank">
+                    Digital Interface for Department Operations
+                </a>
+            </h3>
+            <p>
+                Web application to manage student, faculty, and admin workflows.
+            </p>
+        </div>
 
-    <!-- Project 2 -->
-    <div>
-        <h3>Personal Portfolio Website</h3>
-        <p>
-            A personal portfolio website designed to showcase my skills,
-            academic projects, and contact details.
-        </p>
-        <p><strong>Tools Used:</strong> HTML, CSS</p>
-        <img src="images/projects/projects5.jpeg" alt="Personal Portfolio Website Output" width="400">
-    </div>
+        <div class="project-card">
+            <h3>
+                <a href="project2.html" target="_blank">
+                    Personal Portfolio Website
+                </a>
+            </h3>
+            <p>
+                Portfolio website to showcase skills and academic projects.
+            </p>
+        </div>
 
-    <hr>
+        <div class="project-card">
+            <h3>
+                <a href="project3.html" target="_blank">
+                    Online Learning Platform
+                </a>
+            </h3>
+            <p>
+                Full-stack project for online courses and learning materials.
+            </p>
+        </div>
 
-    <!-- Project 3 -->
-    <div>
-        <h3>Disaster Help Management Mini Project</h3>
-        <p>
-            A mini project developed on full-stack using the MERN stack.
-            It is built real-time monitoring and Designed modules for resource tracking, 
-            reporting to improve disaster coordination and data insights.
-        </p>
-        <p><strong>Tools Used:</strong> Java, MySQL</p>
-        <img src="images/projects/projects4.png" alt="Disaster Help Management Output" width="400">
     </div>
 </section>
 
-<section>
+<!-- Contact -->
+<section id="Contact">
     <h2>Contact</h2>
 
-    <p>
-        📧 <strong>Email:</strong>
-        <a href="mailto:shreyasdorigol@gmail.com">
-            shreyasdorigol@gmail.com
-        </a>
-    </p>
+    <div class="social-links">
+        <a href="mailto:shreyasdorigol@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/shreyas-dorigol" target="_blank">LinkedIn</a>
+        <a href="https://github.com/ShreyasDorigol" target="_blank">GitHub</a>
+    </div>
 
-    <p>
-        💼 <strong>LinkedIn:</strong>
-        <a href="https://www.linkedin.com/in/shreyas-dorigol" target="_blank">
-            View LinkedIn Profile
-        </a>
-    </p>
-
-    <p>
-        🧑‍💻 <strong>GitHub:</strong>
-        <a href="https://github.com/ShreyasDorigol" target="_blank">
-            View GitHub Profile
-        </a>
-    </p>
 </section>
+
+<footer>
+    <p>© 2026 Shreyas Dorigol</p>
+</footer>
+
+<script>
+    // Dark Mode
+    document.getElementById("darkModeToggle").onclick = () => {
+        document.body.classList.toggle("dark");
+    };
+</script>
 
 </body>
 </html>
