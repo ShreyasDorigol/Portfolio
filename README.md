@@ -1,6 +1,6 @@
 # Shreyas Dorigol — Portfolio Website
 
-A personal portfolio website built with HTML, CSS, and JavaScript to showcase skills, projects, and resume.
+A personal portfolio website built with HTML and CSS to showcase skills, projects, and resume.
 
 ## 📁 Project Structure
 
@@ -29,15 +29,13 @@ portfolio/
 - **Sticky navigation bar** with smooth section links
 - **Dark mode toggle** (persists within the session)
 - **Responsive project cards** with hover animations
-- **Downloadable resume** linked directly from the navbar
+- **View resume** linked directly from the navbar
 - **Contact section** with Email, LinkedIn, and GitHub links
 
 ## 🛠️ Tech Stack
 
 - HTML5
 - CSS3
-- JavaScript (vanilla)
-- MySQL *(used in project backends)*
 
 ## 📌 Sections
 
@@ -50,19 +48,6 @@ portfolio/
 | Resume   | Opens `Shreyas-resume.pdf` in a new tab          |
 | Contact  | Links to email, LinkedIn, and GitHub             |
 
-## 🚀 Projects
-
-### 1. Digital Interface for Department Operations
-A full web application to manage department activities, including student management, faculty dashboards, attendance tracking, and automated timetable generation.  
-**Stack:** HTML, CSS, JavaScript, MySQL
-
-### 2. Personal Portfolio Website
-This portfolio site — showcasing a clean UI, responsive design, and dark mode support.  
-**Stack:** HTML, CSS
-
-### 3. Online Learning Platform
-A full-stack project for hosting online courses and learning materials.  
-*(Details in `project3.html`)*
 
 ## 🚦 Getting Started
 
